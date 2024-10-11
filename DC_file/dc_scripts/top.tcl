@@ -2,7 +2,7 @@
 
 source -e -v ../dc_scripts/dc_setup.tcl
 
-set TOP_LEVEL             send_top
+set TOP_LEVEL             top
 set SRC_FILE              ../dc_scripts/read_src.tcl
 set CONSTRAINT_FILE       ../dc_scripts/constraints.tcl
 set TIMING_CHECK_RPT      ../rpt/$TOP_LEVEL\_timing_check.rpt

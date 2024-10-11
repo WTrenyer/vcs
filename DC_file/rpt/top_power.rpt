@@ -1,0 +1,75 @@
+Warning: Main library 'dw_foundation.sldb' does not specify the following units required for power: 'Leakage Power, Capacitance, Voltage, Time'. (PWR-424)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : top
+Version: O-2018.06-SP1
+Date   : Mon Oct  7 22:46:03 2024
+****************************************
+
+
+Library(s) Used:
+
+    gtech (File: /home/synopsys/syn/O-2018.06-SP1/libraries/syn/gtech.db)
+
+
+Operating Conditions: nom_pvt   Library: dw_foundation.sldb
+Wire Load Model Mode: segmented
+
+Design        Wire Load Model            Library
+------------------------------------------------
+
+
+Global Operating Voltage = 5    
+Power-specific unit information :
+    Voltage Units = Unitless
+    Capacitance Units = Unitless
+    Time Units = Unitless
+    Dynamic Power Units = Unitless    (derived from V,C,T units)
+    Leakage Power Units = Unitless
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+top                                       0.000    0.000    0.000      N/A   N/A
+  C3762 (*SELECT_OP_3.38_3.1_38)          0.000    0.000    0.000      N/A   N/A
+  C3761 (*SELECT_OP_2.1_2.1_1)            0.000    0.000    0.000      N/A   N/A
+  C3760 (*SELECT_OP_2.1_2.1_1)            0.000    0.000    0.000      N/A   N/A
+  C3759 (*SELECT_OP_2.122_2.1_122)        0.000    0.000    0.000      N/A   N/A
+  C3758 (*SELECT_OP_4.32_4.1_32)          0.000    0.000    0.000      N/A   N/A
+  C3757 (*SELECT_OP_2.32_2.1_32)          0.000    0.000    0.000      N/A   N/A
+  C3756 (*SELECT_OP_3.32_3.1_32)          0.000    0.000    0.000      N/A   N/A
+  C3755 (*SELECT_OP_2.159_2.1_159)        0.000    0.000    0.000      N/A   N/A
+  C3754 (*SELECT_OP_4.12_4.1_12)          0.000    0.000    0.000      N/A   N/A
+  C3753 (*SELECT_OP_2.111_2.1_111)        0.000    0.000    0.000      N/A   N/A
+  C3752 (*SELECT_OP_3.32_3.1_32)          0.000    0.000    0.000      N/A   N/A
+  add_52 (*ADD_UNS_OP_32_3_32)            0.000    0.000    0.000      N/A   N/A
+  add_47 (*ADD_UNS_OP_32_32_32)           0.000    0.000    0.000      N/A   N/A
+  add_81 (*ADD_UNS_OP_32_3_32)            0.000    0.000    0.000      N/A   N/A
+  mem0 (Memory)                           0.000    0.000    0.000      N/A   N/A
+    C2120 (*MUX_OP_32_5_32)               0.000    0.000    0.000      N/A   N/A
+    C2119 (*SELECT_OP_2.32_2.1_32)        0.000    0.000    0.000      N/A   N/A
+  ALU (ALU)                               0.000    0.000    0.000      N/A   N/A
+    C247 (*SELECT_OP_8.32_8.1_32)         0.000    0.000    0.000      N/A   N/A
+    sub_14 (*SUB_UNS_OP_32_32_32)         0.000    0.000    0.000      N/A   N/A
+    add_13 (*ADD_UNS_OP_32_32_32)         0.000    0.000    0.000      N/A   N/A
+    srl_20 (*ASHR_UNS_UNS_OP_32_32_32)    0.000    0.000    0.000      N/A   N/A
+    sll_19 (*ASH_UNS_UNS_OP_32_32_32)     0.000    0.000    0.000      N/A   N/A
+  ALUControl (ALUControl)                 0.000    0.000    0.000      N/A   N/A
+    C34 (*SELECT_OP_3.2_3.1_2)            0.000    0.000    0.000      N/A   N/A
+    C33 (*SELECT_OP_3.2_3.1_2)            0.000    0.000    0.000      N/A   N/A
+    eq_68 (*EQ_UNS_OP_5_5_1)              0.000    0.000    0.000      N/A   N/A
+    eq_66 (*EQ_UNS_OP_5_5_1)              0.000    0.000    0.000      N/A   N/A
+    eq_59 (*EQ_UNS_OP_5_5_1)              0.000    0.000    0.000      N/A   N/A
+    eq_57 (*EQ_UNS_OP_5_5_1)              0.000    0.000    0.000      N/A   N/A
+  ImmediateExtender (ImmediateExtender)
+                                          0.000    0.000    0.000      N/A   N/A
+1

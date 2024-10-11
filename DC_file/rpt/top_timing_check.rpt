@@ -1,0 +1,38 @@
+Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Can't read link_library file 'sc12mc_l28hlp_base_rvt_c35_ss_typical_max_0p945v_m40c.db_ccs_tn'. (UID-3)
+Warning: Can't read link_library file 'u028giohp25mvsrfs_225c-40_wc.db'. (UID-3)
+Error: Could not read the following target libraries:
+sc12mc_l28hlp_base_rvt_c35_ss_typical_max_0p945v_m40c.db_ccs_tn 
+ (UIO-3)
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Warning: Can't read link_library file 'sc12mc_l28hlp_base_rvt_c35_ss_typical_max_0p945v_m40c.db_ccs_tn'. (UID-3)
+Warning: Can't read link_library file 'u028giohp25mvsrfs_225c-40_wc.db'. (UID-3)
+Warning: Can't read link_library file 'sc12mc_l28hlp_base_rvt_c35_ss_typical_max_0p945v_m40c.db_ccs_tn'. (UID-3)
+Warning: Can't read link_library file 'u028giohp25mvsrfs_225c-40_wc.db'. (UID-3)
+Warning: Can't read link_library file 'sc12mc_l28hlp_base_rvt_c35_ss_typical_max_0p945v_m40c.db_ccs_tn'. (UID-3)
+Warning: Can't read link_library file 'u028giohp25mvsrfs_225c-40_wc.db'. (UID-3)
+Information: The cache entry '/home/ICer/synopsys_cache_O-2018.06-SP1/DW01/DW_leftsh/astr/32/32/generic_5019/8167_8167/mapped.ddc'
+	has been corrupted, so it is being removed. (DWSC-18)
+Warning: Can't read link_library file 'sc12mc_l28hlp_base_rvt_c35_ss_typical_max_0p945v_m40c.db_ccs_tn'. (UID-3)
+Warning: Can't read link_library file 'u028giohp25mvsrfs_225c-40_wc.db'. (UID-3)
+Information: The cache entry '/home/ICer/synopsys_cache_O-2018.06-SP1/DW01/DW_rightsh/astr/32/32/generic_5019/8167_8167/mapped.ddc'
+	has been corrupted, so it is being removed. (DWSC-18)
+Warning: Can't read link_library file 'sc12mc_l28hlp_base_rvt_c35_ss_typical_max_0p945v_m40c.db_ccs_tn'. (UID-3)
+Warning: Can't read link_library file 'u028giohp25mvsrfs_225c-40_wc.db'. (UID-3)
+Information: Updating design information... (UID-85)
+Warning: Design 'top' contains 3 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+1

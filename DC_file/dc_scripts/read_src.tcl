@@ -1,12 +1,12 @@
 #module:  (15 files)
 #.synopsys_dc.setup
-set all_src " ALU.v	/  
+set all_src " 
+        ALU.v	/  
         control.v  	/
         ins_mem.v  	/
         mem_file.v  	/
         register_file.v /  
         top.v		/
-        test.v		/
         top_tb.sv	
 
                "

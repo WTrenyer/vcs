@@ -52,16 +52,16 @@ define_name_rules BORG -allowed {A-Za-z0-9}                        -first_restri
 set sh_output_log_file   "output.log"
 output.log
 output.log
-set TOP_LEVEL             send_top
-send_top
+set TOP_LEVEL             top
+top
 set SRC_FILE              ../dc_scripts/read_src.tcl
 ../dc_scripts/read_src.tcl
 set CONSTRAINT_FILE       ../dc_scripts/constraints.tcl
 ../dc_scripts/constraints.tcl
 set TIMING_CHECK_RPT      ../rpt/$TOP_LEVEL\_timing_check.rpt
-../rpt/send_top_timing_check.rpt
+../rpt/top_timing_check.rpt
 set PORT_RPT              ../rpt/$TOP_LEVEL\_port.rpt
-../rpt/send_top_port.rpt
+../rpt/top_port.rpt
 set FLATTEN               false
 false
 set STRUCTURE             true
@@ -75,47 +75,47 @@ segmented
 set CRITICAL_RANGE        0.5
 0.5
 set NETLIST_DDC           ../netlist/$TOP_LEVEL.ddc
-../netlist/send_top.ddc
+../netlist/top.ddc
 set NETLIST_V             ../netlist/$TOP_LEVEL.v
-../netlist/send_top.v
+../netlist/top.v
 set SDC                   ../sdc/$TOP_LEVEL.sdc
-../sdc/send_top.sdc
+../sdc/top.sdc
 set SDF                   ../netlist/$TOP_LEVEL.sdf
-../netlist/send_top.sdf
+../netlist/top.sdf
 set CONSTRAINT_VIOLATION  ../rpt/$TOP_LEVEL\_vio.rpt
-../rpt/send_top_vio.rpt
+../rpt/top_vio.rpt
 set TIMING_RPT            ../rpt/$TOP_LEVEL\_timing.rpt
-../rpt/send_top_timing.rpt
+../rpt/top_timing.rpt
 set TIMING_RPT_MIN            ../rpt/$TOP_LEVEL\_hold_timing.rpt
-../rpt/send_top_hold_timing.rpt
+../rpt/top_hold_timing.rpt
 set TIMING_RPT_NUM        10
 10
 set AREA_RPT              ../rpt/$TOP_LEVEL\_area.rpt
-../rpt/send_top_area.rpt
+../rpt/top_area.rpt
 set POWER_RPT             ../rpt/$TOP_LEVEL\_power.rpt
-../rpt/send_top_power.rpt
+../rpt/top_power.rpt
 set_host_options -max_cores 8
 1
 source -e -v $SRC_FILE
 #module:  (15 files)
 #.synopsys_dc.setup
-set all_src " ALU.v	/  
+set all_src " 
+        ALU.v	/  
         control.v  	/
         ins_mem.v  	/
         mem_file.v  	/
         register_file.v /  
         top.v		/
-        test.v		/
         top_tb.sv	
 
                "
- ALU.v	/  
+ 
+        ALU.v	/  
         control.v  	/
         ins_mem.v  	/
         mem_file.v  	/
         register_file.v /  
         top.v		/
-        test.v		/
         top_tb.sv	
 
                
@@ -180,7 +180,7 @@ Statistics for case statements in always block at line 11 in file
 |            12            |    auto/auto     |
 ===============================================
 Presto compilation completed successfully.
-Warning: Overwriting design file '/home/ICer/vcs/DC_file/work/ALU.db'. (DDB-24)
+Warning: Overwriting design file '/home/ICer/vcs_class/DC_file/work/ALU.db'. (DDB-24)
 Elaborated 1 design.
 Current design is now 'ALU'.
 Warning: Can't read link_library file 'sc12mc_l28hlp_base_rvt_c35_ss_typical_max_0p945v_m40c.db_ccs_tn'. (UID-3)
@@ -217,7 +217,7 @@ Warning: Can't read link_library file 'sc12mc_l28hlp_base_rvt_c35_ss_typical_max
 Warning: Can't read link_library file 'u028giohp25mvsrfs_225c-40_wc.db'. (UID-3)
 Running PRESTO HDLC
 Presto compilation completed successfully.
-Warning: Overwriting design file '/home/ICer/vcs/DC_file/work/control.db'. (DDB-24)
+Warning: Overwriting design file '/home/ICer/vcs_class/DC_file/work/control.db'. (DDB-24)
 Elaborated 1 design.
 Current design is now 'control'.
 Warning: Can't read link_library file 'sc12mc_l28hlp_base_rvt_c35_ss_typical_max_0p945v_m40c.db_ccs_tn'. (UID-3)
@@ -481,7 +481,7 @@ Inferred memory devices in process
 |     MEM_WB_reg      | Flip-flop |  38   |  Y  | N  | N  | N  | N  | N  | N  |
 ===============================================================================
 Presto compilation completed successfully.
-Warning: Overwriting design file '/home/ICer/vcs/DC_file/work/top.db'. (DDB-24)
+Warning: Overwriting design file '/home/ICer/vcs_class/DC_file/work/top.db'. (DDB-24)
 Elaborated 1 design.
 Current design is now 'top'.
 Warning: Can't read link_library file 'sc12mc_l28hlp_base_rvt_c35_ss_typical_max_0p945v_m40c.db_ccs_tn'. (UID-3)
@@ -536,24 +536,6 @@ Statistics for MUX_OPs
 Presto compilation completed successfully.
 Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
 Running PRESTO HDLC
-Compiling source file ../src/test.v
-Presto compilation completed successfully.
-Warning: Can't read link_library file 'sc12mc_l28hlp_base_rvt_c35_ss_typical_max_0p945v_m40c.db_ccs_tn'. (UID-3)
-Warning: Can't read link_library file 'u028giohp25mvsrfs_225c-40_wc.db'. (UID-3)
-Warning: Detected use of obsolete/unsupported feature.  The following
-	will not be available in a future release of the application:
-	elaborate -update. Use plain elaborate instead (CMD-100)
-Error: Can't find the architecture 'test(verilog)' in the library 'WORK'
-Running PRESTO HDLC
-Compiling source file ../src//
-Presto compilation completed successfully.
-Warning: Can't read link_library file 'sc12mc_l28hlp_base_rvt_c35_ss_typical_max_0p945v_m40c.db_ccs_tn'. (UID-3)
-Warning: Can't read link_library file 'u028giohp25mvsrfs_225c-40_wc.db'. (UID-3)
-Warning: Detected use of obsolete/unsupported feature.  The following
-	will not be available in a future release of the application:
-	elaborate -update. Use plain elaborate instead (CMD-100)
-Error: Can't find the architecture 'test(verilog)' in the library 'WORK'
-Running PRESTO HDLC
 Compiling source file ../src/top_tb.sv
 Error:  Unable to open file `../src/top_tb.sv': No such file or directory. (VER-41)
 *** Presto compilation terminated with 1 errors. ***
@@ -562,12 +544,125 @@ Warning: Can't read link_library file 'u028giohp25mvsrfs_225c-40_wc.db'. (UID-3)
 Warning: Detected use of obsolete/unsupported feature.  The following
 	will not be available in a future release of the application:
 	elaborate -update. Use plain elaborate instead (CMD-100)
-Error: Can't find the architecture 'test(verilog)' in the library 'WORK'
+Warning: Can't read link_library file 'sc12mc_l28hlp_base_rvt_c35_ss_typical_max_0p945v_m40c.db_ccs_tn'. (UID-3)
+Warning: Can't read link_library file 'u028giohp25mvsrfs_225c-40_wc.db'. (UID-3)
+Warning: Can't read link_library file 'sc12mc_l28hlp_base_rvt_c35_ss_typical_max_0p945v_m40c.db_ccs_tn'. (UID-3)
+Warning: Can't read link_library file 'u028giohp25mvsrfs_225c-40_wc.db'. (UID-3)
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine top line 42 in file
+		'../src/top.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       PC_reg        | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine top line 84 in file
+		'../src/top.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      IF_ID_reg      | Flip-flop |  113  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine top line 143 in file
+		'../src/top.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      ID_EX_reg      | Flip-flop |  159  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine top line 216 in file
+		'../src/top.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     EX_MEN_reg      | Flip-flop |  122  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine top line 252 in file
+		'../src/top.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     pause_0_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     pause_1_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine top line 275 in file
+		'../src/top.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     MEM_WB_reg      | Flip-flop |  38   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Warning: Overwriting design file '/home/ICer/vcs_class/DC_file/work/top.db'. (DDB-24)
+Elaborated 1 design.
+Current design is now 'top'.
+Warning: Can't read link_library file 'sc12mc_l28hlp_base_rvt_c35_ss_typical_max_0p945v_m40c.db_ccs_tn'. (UID-3)
+Warning: Can't read link_library file 'u028giohp25mvsrfs_225c-40_wc.db'. (UID-3)
+Error: Width mismatch on port 'Address' of reference to 'InstructionMemory' in 'top'. (LINK-3)
+Error: Width mismatch on port 'sign' of reference to 'control' in 'top'. (LINK-3)
+Information: Building the design 'register_file'. (HDL-193)
+Error:  ../src/register_file.v:30: Cannot test variable 'rst' because it was not in the event expression or with wrong polarity. (ELAB-300)
+Error:  ../src/register_file.v:35: Cannot test variable 'reg_write' because it was not in the event expression or with wrong polarity. (ELAB-300)
+*** Presto compilation terminated with 2 errors. ***
+Information: Building the design 'register_file'. (HDL-193)
+Information: Building the design 'ImmediateExtender'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'ALUControl'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'ALU'. (HDL-193)
+Warning:  ../src/ALU.v:12: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 11 in file
+	'../src/ALU.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            12            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'Memory'. (HDL-193)
+
+Inferred memory devices in process
+	in routine Memory line 20 in file
+		'../src/mem_file.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      dout_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine Memory line 25 in file
+		'../src/mem_file.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       mem_reg       | Flip-flop | 1024  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|    Memory/21     |   32   |   32    |      5       |
+======================================================
+Presto compilation completed successfully.
+Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
 set_svf $TOP_LEVEL\.svf
 1
 #**************************************************************
 current_design $TOP_LEVEL
-Error: Can't find design 'send_top'. (UID-109)
 Current design is 'top'.
 {top}
 link
@@ -577,7 +672,7 @@ Warning: Can't read link_library file 'u028giohp25mvsrfs_225c-40_wc.db'. (UID-3)
   Linking design 'top'
   Using the following designs and libraries:
   --------------------------------------------------------------------------
-  * (7 designs)               /home/ICer/vcs/DC_file/work/top.db, etc
+  * (7 designs)               /home/ICer/vcs_class/DC_file/work/top.db, etc
   dw_foundation.sldb (library) /home/synopsys/syn/O-2018.06-SP1/libraries/syn/dw_foundation.sldb
 
 Error: Width mismatch on port 'Address' of reference to 'InstructionMemory' in 'top'. (LINK-3)
@@ -592,7 +687,6 @@ Information: Building the design 'register_file'. (HDL-193)
 Warning: Unable to resolve reference 'register_file' in 'top'. (LINK-5)
 0
 current_design $TOP_LEVEL
-Error: Can't find design 'send_top'. (UID-109)
 Current design is 'top'.
 {top}
 uniquify -dont_skip_empty_designs
@@ -601,7 +695,6 @@ Warning: Design 'top' has '1' unresolved references. For more detailed informati
 set set_ultra_optimization true
 true
 current_design $TOP_LEVEL
-Error: Can't find design 'send_top'. (UID-109)
 Current design is 'top'.
 {top}
 #**************************************************************
@@ -768,11 +861,11 @@ Warning: In the design ALU, net 'Result[31]' is connecting multiple ports. (UCN-
 1
 write -hierarchy -format ddc -output $NETLIST_DDC
 Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
-Writing ddc file '../netlist/send_top.ddc'.
+Writing ddc file '../netlist/top.ddc'.
 1
 write -hierarchy -format verilog -output $NETLIST_V
 Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
-Writing verilog file '/home/ICer/vcs/DC_file/netlist/send_top.v'.
+Writing verilog file '/home/ICer/vcs_class/DC_file/netlist/top.v'.
 Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
 Warning: Module ALUControl contains unmapped components.  The output netlist might not be read back into the system. (VO-12)
 Warning: Module ALU contains unmapped components.  The output netlist might not be read back into the system. (VO-12)
@@ -786,7 +879,7 @@ write_sdf $SDF
 Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
 Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
 Warning: Using 'user-specified' sdf time scale of '1.000000 ns'. (WT-9)
-Information: Writing timing information to file '/home/ICer/vcs/DC_file/netlist/send_top.sdf'. (WT-3)
+Information: Writing timing information to file '/home/ICer/vcs_class/DC_file/netlist/top.sdf'. (WT-3)
 Information: Updating design information... (UID-85)
 Warning: Design 'top' contains 3 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
 Warning: Design contains black-box components.  These cells will have no timing information. (WT-7)
@@ -798,10 +891,5 @@ report_timing -max $TIMING_RPT_NUM > $TIMING_RPT
 report_timing -delay min -max_paths $TIMING_RPT_NUM -nets -tran -nosplit -input_pins > $TIMING_RPT_MIN
 report_area -hierarchy > $AREA_RPT
 report_power -hierarchy > $POWER_RPT
-dc_shell> exit
-
-Memory usage for main task 94 Mbytes.
-Memory usage for this session 94 Mbytes.
-CPU usage for this session 2 seconds ( 0.00 hours ).
-
-Thank you...
+dc_shell> cd
+dc_shell> 
