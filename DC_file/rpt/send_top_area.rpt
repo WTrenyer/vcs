@@ -1,0 +1,73 @@
+Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : area
+Design : top
+Version: O-2018.06-SP1
+Date   : Fri Oct  4 11:20:58 2024
+****************************************
+
+Library(s) Used:
+
+    gtech (File: /home/synopsys/syn/O-2018.06-SP1/libraries/syn/gtech.db)
+
+Number of ports:                         1654
+Number of nets:                          5340
+Number of cells:                         2827
+Number of combinational cells:           1244
+Number of sequential cells:              1557
+Number of macros/black boxes:               0
+Number of buf/inv:                        205
+Number of references:                      25
+
+Combinational area:                  0.000000
+Buf/Inv area:                        0.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                     0.000000
+Total area:                 undefined
+
+Information: This design contains unmapped logic. (RPT-7)
+Information: This design contains black box (unknown) components. (RPT-8)
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  -------------------------
+top                                  0.0000      0.0    0.0000     0.0000  0.0000  top
+ALU                                  0.0000      0.0    0.0000     0.0000  0.0000  ALU
+ALU/add_13                           0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_32_32_32
+ALU/add_13/*cell*103                 0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width32
+ALU/sll_19                           0.0000      0.0    0.0000     0.0000  0.0000  *ASH_UNS_UNS_OP_32_32_32
+ALU/sll_19/*cell*109                 0.0000      0.0    0.0000     0.0000  0.0000  DW_leftsh
+ALU/srl_20                           0.0000      0.0    0.0000     0.0000  0.0000  *ASHR_UNS_UNS_OP_32_32_32
+ALU/srl_20/*cell*111                 0.0000      0.0    0.0000     0.0000  0.0000  DW_rightsh
+ALU/sub_14                           0.0000      0.0    0.0000     0.0000  0.0000  *SUB_UNS_OP_32_32_32
+ALU/sub_14/*cell*106                 0.0000      0.0    0.0000     0.0000  0.0000  DW01_sub_width32
+ALUControl                           0.0000      0.0    0.0000     0.0000  0.0000  ALUControl
+ALUControl/eq_57                     0.0000      0.0    0.0000     0.0000  0.0000  *EQ_UNS_OP_5_5_1
+ALUControl/eq_57/*cell*90            0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp6_width5
+ALUControl/eq_59                     0.0000      0.0    0.0000     0.0000  0.0000  *EQ_UNS_OP_5_5_1
+ALUControl/eq_59/*cell*93            0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp6_width5
+ALUControl/eq_66                     0.0000      0.0    0.0000     0.0000  0.0000  *EQ_UNS_OP_5_5_1
+ALUControl/eq_66/*cell*96            0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp6_width5
+ALUControl/eq_68                     0.0000      0.0    0.0000     0.0000  0.0000  *EQ_UNS_OP_5_5_1
+ALUControl/eq_68/*cell*99            0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp6_width5
+ImmediateExtender                    0.0000      0.0    0.0000     0.0000  0.0000  ImmediateExtender
+add_47                               0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_32_32_32
+add_47/*cell*80                      0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width32
+add_52                               0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_32_3_32
+add_52/*cell*83                      0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width32
+add_81                               0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_32_3_32
+add_81/*cell*86                      0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width32
+mem0                                 0.0000      0.0    0.0000     0.0000  0.0000  Memory
+--------------------------------  ---------  -------  --------  ---------  ------  -------------------------
+Total                                                   0.0000     0.0000  0.0000
+
+1

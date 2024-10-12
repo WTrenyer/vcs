@@ -1,0 +1,8 @@
+aaa
+ALU.v
+control.v
+ins_mem.v
+mem_file.v
+register_file.v
+test.v
+top.v

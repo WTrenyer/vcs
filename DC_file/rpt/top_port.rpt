@@ -1,0 +1,66 @@
+Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : port
+        -verbose
+Design : top
+Version: O-2018.06-SP1
+Date   : Mon Oct  7 22:46:01 2024
+****************************************
+
+
+
+Attributes:
+    d - dont_touch_network
+    i - ideal_network
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+clk            in      0.0000   0.0000   --      --      --         d, i
+res_clk        in      0.0000   0.0000   --      --      --         
+rst            in      0.0000   0.0000   --      --      --         
+led            out     0.0000   0.0000   --      --      --         
+
+
+              External  Max             Min                Min       Min
+              Number    Wireload        Wireload           Pin       Wire
+Port          Points    Model           Model              Load      Load
+--------------------------------------------------------------------------------
+clk                1      --              --              --        -- 
+res_clk            1      --              --              --        -- 
+rst                1      --              --              --        -- 
+led                1      --              --              --        -- 
+
+                    Input Delay
+                  Min             Max       Related   Max
+Input Port    Rise    Fall    Rise    Fall   Clock  Fanout
+--------------------------------------------------------------------------------
+clk           --      --      --      --      --      -- 
+res_clk       0.00    0.00    2.00    2.00  clk       --    
+rst           0.00    0.00    2.00    2.00  clk       --    
+
+
+               Max Drive      Min Drive      Resistance    Min    Min       Cell
+Input Port    Rise    Fall   Rise    Fall   Max     Min    Cap    Fanout    Deg
+--------------------------------------------------------------------------------
+clk           --      --     --      --     --      --     --     --        -- 
+res_clk       --      --     --      --     --      --     --     --        -- 
+rst           --      --     --      --     --      --     --     --        -- 
+
+
+               Max Tran        Min Tran
+Input Port    Rise    Fall    Rise    Fall
+--------------------------------------------------------------------------------
+clk           --      --      --      -- 
+res_clk       --      --      --      -- 
+rst           --      --      --      -- 
+
+
+                    Output Delay
+                  Min             Max      Related  Fanout
+Output Port   Rise    Fall    Rise    Fall  Clock     Load
+--------------------------------------------------------------------------------
+led           0.00    0.00    1.00    1.00  clk       0.00  
+
+1
