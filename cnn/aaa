@@ -1,0 +1,14 @@
+./new/computeAdd.v
+./new/computeMult.v
+./new/computeUnit.v
+./new/convLayer_test.v
+./new/convLayer.v
+./new/convUnit.v
+./new/dataReuse_test.v
+./new/dataReuse.v
+./new/fifo100.v
+./new/fifo784.v
+./new/maxValue.v
+./new/quantify.v
+./new/ramResult.v
+./new/ramWrite.v

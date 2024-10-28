@@ -1,5 +1,5 @@
 ##spyglass_version: SpyGlass_vL-2016.06
-##date: Sat Oct 12 13:50:41 2024
+##date: Sun Oct 13 19:59:54 2024
 ##user: ICer
 ##cwd: /home/ICer/vcs_class/cnn/new
 ##lang: verilog+vhdl
@@ -900,7 +900,7 @@
 ElabSummary@@ElabSummary@@Info@@./spyglass-1/Design_Read/spyglass_reports/SpyGlass/elab_summary.rpt@@0@@1@@2@@Please refer file './spyglass-1/Design_Read/spyglass_reports/SpyGlass/elab_summary.rpt' for elab summary report
 ##sde_property: msg_label DEFAULT
 ##sde_property: msg_id DEFAULT
-##files_verilog: fifo/wl_afifo_wrapper.v fifo/wl_afifo.v fifo/wl_afifo_rempty.v fifo/wl_afifo_wfull.v fifo/wl_afifo_awfull.v fifo/wl_afifo_arempty.v fifo/wl_afifo_synr2w.v fifo/wl_afifo_synw2r.v fifo/wl_afifo_ram.v fifo784.v fifo100.v dataReuse_test.v ramWrite.v dataReuse.v convLayer_test.v convLayer.v convUnit.v computeUnit.v computeMult.v computeAdd.v maxValue.v ramResult.v quantify.v
+##files_verilog: fifo784.v fifo100.v dataReuse_test.v ramWrite.v dataReuse.v convLayer_test.v convLayer.v convUnit.v computeUnit.v computeMult.v computeAdd.v maxValue.v ramResult.v quantify.v
 ##sde_property: file computeAdd.v -id 1
 ##sde_property: file computeMult.v -id 2 -inactiveList slc 2 2 1
 ##sde_property: file computeUnit.v -id 3
@@ -915,73 +915,38 @@ ElabSummary@@ElabSummary@@Info@@./spyglass-1/Design_Read/spyglass_reports/SpyGla
 ##sde_property: file quantify.v -id 12
 ##sde_property: file ramResult.v -id 13 -inactiveList slc 133 138 1 slc 142 147 1 slc 151 156 1 slc 160 165 1 slc 169 174 1 slc 178 183 1 slc 187 192 1 slc 196 201 1 slc 205 210 1 slc 214 219 1 slc 223 228 1 slc 232 237 1 slc 241 246 1 slc 250 255 1 slc 259 264 1 slc 268 273 1
 ##sde_property: file ramWrite.v -id 14 -inactiveList slc 24 25 1
-##sde_property: file fifo/wl_afifo.v -id 15 -inactiveList slc 24 28 1 slc 44 54 1 slc 56 63 1 slc 65 79 1 slc 81 81 1 slc 95 95 1 slc 109 109 1 slc 120 120 1 slc 131 131 1 slc 141 141 1 slc 150 150 1
-##sde_property: file fifo/wl_afifo_arempty.v -id 16 -inactiveList slc 12 14 1 slc 16 17 1 slc 19 23 1 slc 25 25 1 slc 27 32 1 slc 34 34 1 slc 40 40 1
-##sde_property: file fifo/wl_afifo_awfull.v -id 17 -inactiveList slc 12 14 1 slc 16 17 1 slc 19 23 1 slc 25 25 1 slc 27 32 1 slc 34 34 1 slc 40 40 1
-##sde_property: file fifo/wl_afifo_ram.v -id 18 -inactiveList slc 14 14 1 slc 16 19 1 slc 21 24 1
-##sde_property: file fifo/wl_afifo_rempty.v -id 19 -inactiveList slc 15 16 1 slc 18 22 1 slc 24 28 1 slc 30 33 1 slc 35 39 1 slc 41 41 1 slc 56 56 1 slc 71 71 1 slc 75 75 1 slc 85 85 1
-##sde_property: file fifo/wl_afifo_synr2w.v -id 20 -inactiveList slc 12 13 1 slc 15 16 1 slc 18 21 1 slc 23 23 1 slc 25 28 1 slc 30 30 1
-##sde_property: file fifo/wl_afifo_synw2r.v -id 21 -inactiveList slc 11 12 1 slc 14 15 1 slc 17 20 1 slc 22 22 1 slc 24 27 1 slc 29 29 1
-##sde_property: file fifo/wl_afifo_wfull.v -id 22 -inactiveList slc 15 17 1 slc 19 23 1 slc 25 29 1 slc 31 34 1 slc 36 43 1 slc 45 45 1 slc 60 60 1 slc 75 75 1 slc 79 79 1 slc 85 85 1 slc 95 95 1
-##sde_property: file fifo/wl_afifo_wrapper.v -id 23 -inactiveList slc 22 28 1 slc 30 30 1 slc 46 60 1 slc 62 69 1 slc 71 79 1 slc 81 88 1 slc 90 90 1 slc 115 115 1
-#span wl_afifo_wrapper fifo/wl_afifo_wrapper.v 2 138
-#rtl_idmap wl_afifo_wrapper 1 -lang 1
-#span wl_afifo fifo/wl_afifo.v 2 163
-#rtl_idmap wl_afifo 2 -lang 1
-#span wl_afifo_rempty fifo/wl_afifo_rempty.v 2 98
-#rtl_idmap wl_afifo_rempty 3 -lang 1
-#span wl_afifo_wfull fifo/wl_afifo_wfull.v 2 107
-#rtl_idmap wl_afifo_wfull 4 -lang 1
-#span wl_afifo_awfull fifo/wl_afifo_awfull.v 2 50
-#rtl_idmap wl_afifo_awfull 5 -lang 1
-#span wl_afifo_arempty fifo/wl_afifo_arempty.v 2 50
-#rtl_idmap wl_afifo_arempty 6 -lang 1
-#span wl_afifo_synr2w fifo/wl_afifo_synr2w.v 3 44
-#rtl_idmap wl_afifo_synr2w 7 -lang 1
-#span wl_afifo_synw2r fifo/wl_afifo_synw2r.v 2 41
-#rtl_idmap wl_afifo_synw2r 8 -lang 1
-#span wl_afifo_ram fifo/wl_afifo_ram.v 2 32
-#rtl_idmap wl_afifo_ram 9 -lang 1
 #span fifo784 fifo784.v 3 116
-#rtl_idmap fifo784 10 -lang 1
+#rtl_idmap fifo784 1 -lang 1
 #span fifo100 fifo100.v 3 116
-#rtl_idmap fifo100 11 -lang 1
+#rtl_idmap fifo100 2 -lang 1
 #span dataReuse_test dataReuse_test.v 3 68
-#rtl_idmap dataReuse_test 12 -lang 1
+#rtl_idmap dataReuse_test 3 -lang 1
 #span ramWrite ramWrite.v 3 100
-#rtl_idmap ramWrite 13 -lang 1
+#rtl_idmap ramWrite 4 -lang 1
 #span dataReuse dataReuse.v 3 261
-#rtl_idmap dataReuse 14 -lang 1
+#rtl_idmap dataReuse 5 -lang 1
 #span convLayer_test convLayer_test.v 3 73
-#rtl_idmap convLayer_test 15 -lang 1
+#rtl_idmap convLayer_test 6 -lang 1
 #span convLayer convLayer.v 3 228
-#rtl_idmap convLayer 16 -lang 1
+#rtl_idmap convLayer 7 -lang 1
 #span convUnit convUnit.v 3 207
-#rtl_idmap convUnit 17 -lang 1
+#rtl_idmap convUnit 8 -lang 1
 #span computeUnit computeUnit.v 3 74
-#rtl_idmap computeUnit 18 -lang 1
+#rtl_idmap computeUnit 9 -lang 1
 #span computeMult computeMult.v 3 17 computeMult.v 2 17
-#rtl_idmap computeMult 19 -lang 1
+#rtl_idmap computeMult 10 -lang 1
 #span computeAdd computeAdd.v 3 11
-#rtl_idmap computeAdd 20 -lang 1
+#rtl_idmap computeAdd 11 -lang 1
 #span maxValue maxValue.v 3 289
-#rtl_idmap maxValue 21 -lang 1
+#rtl_idmap maxValue 12 -lang 1
 #span ramResult ramResult.v 3 276
-#rtl_idmap ramResult 22 -lang 1
+#rtl_idmap ramResult 13 -lang 1
 #span quantify quantify.v 3 124
-#rtl_idmap quantify 23 -lang 1
-#greybox wl_afifo_wrapper 15
-#greybox wl_sdpram 0
-#greybox wl_afifo 15
-#greybox wl_afifo_rempty 15
-#greybox wl_afifo_wfull 15
-#greybox wl_afifo_awfull 15
-#greybox wl_afifo_arempty 15
-#greybox wl_afifo_synr2w 15
-#greybox wl_afifo_synw2r 15
-#greybox wl_afifo_ram 15
+#rtl_idmap quantify 14 -lang 1
 #greybox fifo784 15
+#greybox wl_afifo 0
 #greybox fifo100 15
+#greybox wl_afifo 0
 #greybox dataReuse_test 15
 #greybox ramWrite 15
 #greybox dataReuse 15
@@ -999,64 +964,42 @@ ElabSummary@@ElabSummary@@Info@@./spyglass-1/Design_Read/spyglass_reports/SpyGla
 #greybox ram100 0
 #greybox quantify 15
 DetectTopDesignUnits@@DetectTopDesignUnits@@Info@@convLayer_test.v@@3@@1@@2@@Module convLayer_test is a top level design unit
-##sde_property: violation -duId 15 
+##sde_property: violation -duId 6 
 DetectTopDesignUnits@@DetectTopDesignUnits@@Info@@dataReuse_test.v@@3@@1@@2@@Module dataReuse_test is a top level design unit
-##sde_property: violation -duId 12 
+##sde_property: violation -duId 3 
 DetectTopDesignUnits@@DetectTopDesignUnits@@Info@@fifo100.v@@3@@1@@2@@Module fifo100 is a top level design unit
-##sde_property: violation -duId 11 
+##sde_property: violation -duId 2 
 DetectTopDesignUnits@@DetectTopDesignUnits@@Info@@fifo784.v@@3@@1@@2@@Module fifo784 is a top level design unit
-##sde_property: violation -duId 10 
-DetectTopDesignUnits@@DetectTopDesignUnits@@Info@@fifo/wl_afifo_wrapper.v@@2@@1@@2@@Module wl_afifo_wrapper is a top level design unit
 ##sde_property: violation -duId 1 
-#rtl_top_modules convLayer_test dataReuse_test fifo100 fifo784 wl_afifo_wrapper
+#rtl_top_modules convLayer_test dataReuse_test fifo100 fifo784
 ErrorAnalyzeBBox@@ErrorAnalyzeBBox@@Error@@dataReuse.v@@242@@1@@10@@Design Unit 'blk_mem_gen_0' has no definition; black-box behavior assumed
-##sde_property: violation -duId 14 -elabDuId 4 
+##sde_property: violation -duId 5 -elabDuId 4 
 ##sde_property: msg_label Label_3
 ##sde_property: msg_id Label_3
 ErrorAnalyzeBBox@@ErrorAnalyzeBBox@@Error@@dataReuse.v@@252@@1@@10@@Design Unit 'blk_mem_gen_1' has no definition; black-box behavior assumed
-##sde_property: violation -duId 14 -elabDuId 4 
+##sde_property: violation -duId 5 -elabDuId 4 
 ##sde_property: msg_label Label_3
 ##sde_property: msg_id Label_3
 ErrorAnalyzeBBox@@ErrorAnalyzeBBox@@Error@@ramResult.v@@186@@1@@10@@Design Unit 'ram100' has no definition; black-box behavior assumed
-##sde_property: violation -duId 22 -elabDuId 12 
+##sde_property: violation -duId 13 -elabDuId 12 
 ##sde_property: msg_label Label_3
 ##sde_property: msg_id Label_3
 ErrorAnalyzeBBox@@ErrorAnalyzeBBox@@Error@@ramResult.v@@132@@1@@10@@Design Unit 'ram784' has no definition; black-box behavior assumed
-##sde_property: violation -duId 22 -elabDuId 12 
+##sde_property: violation -duId 13 -elabDuId 12 
 ##sde_property: msg_label Label_3
 ##sde_property: msg_id Label_3
-ErrorAnalyzeBBox@@ErrorAnalyzeBBox@@Error@@fifo/wl_afifo_wrapper.v@@92@@1@@10@@Design Unit 'wl_sdpram' has no definition; black-box behavior assumed
-##sde_property: violation -duId 1 -elabDuId 49 
-##sde_property: msg_label Label_3
-##sde_property: msg_id Label_3
-#childElab wl_afifo_wrapper wl_afifo_wrapper -elabDuId 49 wl_sdpram0 wl_sdpram wl_afifo WORK_wl_afifo_10_8_2_4
-#childElab wl_sdpram wl_sdpram -elabDuId 50
-#childElab WORK_wl_afifo_10_8_2_4 wl_afifo -elabDuId 51 wl_afifo_rempty WORK_wl_afifo_rempty_4 wl_afifo_wfull WORK_wl_afifo_wfull_4_10 wl_afifo_awfull WORK_wl_afifo_awfull_4_8 wl_afifo_arempty WORK_wl_afifo_arempty_4_2 wl_afifo_synr2w WORK_wl_afifo_synr2w_4 wl_afifo_synw2r WORK_wl_afifo_synw2r_4 wl_afifo_ram WORK_wl_afifo_ram_4
-#childElab WORK_wl_afifo_rempty_4 wl_afifo_rempty -elabDuId 52
-#childElab WORK_wl_afifo_wfull_4_10 wl_afifo_wfull -elabDuId 53
-#childElab WORK_wl_afifo_awfull_4_8 wl_afifo_awfull -elabDuId 54
-#childElab WORK_wl_afifo_arempty_4_2 wl_afifo_arempty -elabDuId 55
-#childElab WORK_wl_afifo_synr2w_4 wl_afifo_synr2w -elabDuId 56
-#childElab WORK_wl_afifo_synw2r_4 wl_afifo_synw2r -elabDuId 57
-#childElab WORK_wl_afifo_ram_4 wl_afifo_ram -elabDuId 58
-#childElab fifo784 fifo784 -elabDuId 40 wl_afifo WORK_wl_afifo_100_8_2_7
-#childElab WORK_wl_afifo_100_8_2_7 wl_afifo -elabDuId 41 wl_afifo_rempty WORK_wl_afifo_rempty_7 wl_afifo_wfull WORK_wl_afifo_wfull_7_100 wl_afifo_awfull WORK_wl_afifo_awfull_7_8 wl_afifo_arempty WORK_wl_afifo_arempty_7_2 wl_afifo_synr2w WORK_wl_afifo_synr2w_7 wl_afifo_synw2r WORK_wl_afifo_synw2r_7 wl_afifo_ram WORK_wl_afifo_ram_7
-#childElab WORK_wl_afifo_rempty_7 wl_afifo_rempty -elabDuId 42
-#childElab WORK_wl_afifo_wfull_7_100 wl_afifo_wfull -elabDuId 43
-#childElab WORK_wl_afifo_awfull_7_8 wl_afifo_awfull -elabDuId 44
-#childElab WORK_wl_afifo_arempty_7_2 wl_afifo_arempty -elabDuId 45
-#childElab WORK_wl_afifo_synr2w_7 wl_afifo_synr2w -elabDuId 46
-#childElab WORK_wl_afifo_synw2r_7 wl_afifo_synw2r -elabDuId 47
-#childElab WORK_wl_afifo_ram_7 wl_afifo_ram -elabDuId 48
-#childElab fifo100 fifo100 -elabDuId 31 wl_afifo WORK_wl_afifo_784_8_2_10
-#childElab WORK_wl_afifo_784_8_2_10 wl_afifo -elabDuId 32 wl_afifo_rempty WORK_wl_afifo_rempty_10 wl_afifo_wfull WORK_wl_afifo_wfull_10_784 wl_afifo_awfull WORK_wl_afifo_awfull_10_8 wl_afifo_arempty WORK_wl_afifo_arempty_10_2 wl_afifo_synr2w WORK_wl_afifo_synr2w_10 wl_afifo_synw2r WORK_wl_afifo_synw2r_10 wl_afifo_ram WORK_wl_afifo_ram_10
-#childElab WORK_wl_afifo_rempty_10 wl_afifo_rempty -elabDuId 33
-#childElab WORK_wl_afifo_wfull_10_784 wl_afifo_wfull -elabDuId 34
-#childElab WORK_wl_afifo_awfull_10_8 wl_afifo_awfull -elabDuId 35
-#childElab WORK_wl_afifo_arempty_10_2 wl_afifo_arempty -elabDuId 36
-#childElab WORK_wl_afifo_synr2w_10 wl_afifo_synr2w -elabDuId 37
-#childElab WORK_wl_afifo_synw2r_10 wl_afifo_synw2r -elabDuId 38
-#childElab WORK_wl_afifo_ram_10 wl_afifo_ram -elabDuId 39
+ErrorAnalyzeBBox@@ErrorAnalyzeBBox@@Error@@fifo784.v@@94@@1@@10@@Design Unit 'wl_afifo' (elaborated name 'wl_afifo_100_8_2') has no definition; black-box behavior assumed
+##sde_property: violation -duId 1 -elabDuId 33 
+##sde_property: msg_label Label_4
+##sde_property: msg_id Label_4
+ErrorAnalyzeBBox@@ErrorAnalyzeBBox@@Error@@fifo100.v@@94@@1@@10@@Design Unit 'wl_afifo' (elaborated name 'wl_afifo_784_8_2') has no definition; black-box behavior assumed
+##sde_property: violation -duId 2 -elabDuId 31 
+##sde_property: msg_label Label_4
+##sde_property: msg_id Label_4
+#childElab fifo784 fifo784 -elabDuId 33 wl_afifo wl_afifo_100_8_2
+#childElab wl_afifo_100_8_2 wl_afifo -elabDuId 34
+#childElab fifo100 fifo100 -elabDuId 31 wl_afifo wl_afifo_784_8_2
+#childElab wl_afifo_784_8_2 wl_afifo -elabDuId 32
 #childElab dataReuse_test dataReuse_test -elabDuId 30 ramWrite ramWrite dataReuse dataReuse
 #childElab ramWrite ramWrite -elabDuId 2
 #childElab dataReuse dataReuse -elabDuId 4 ram_weight blk_mem_gen_0 ram_image blk_mem_gen_1

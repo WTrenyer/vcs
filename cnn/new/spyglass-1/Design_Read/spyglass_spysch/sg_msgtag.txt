@@ -1,18 +1,21 @@
-6 "ErrorAnalyzeBBox" 1
+5 "ErrorAnalyzeBBox" 1
 "BBoxEng"
 ["blk_mem_gen_0","BB_NO_MOD_DEF"]
-7 "ErrorAnalyzeBBox" 1
+6 "ErrorAnalyzeBBox" 1
 "BBoxEng"
 ["blk_mem_gen_1","BB_NO_MOD_DEF"]
-8 "ErrorAnalyzeBBox" 1
+7 "ErrorAnalyzeBBox" 1
 "BBoxEng"
 ["ram100","BB_NO_MOD_DEF"]
-9 "ErrorAnalyzeBBox" 1
+8 "ErrorAnalyzeBBox" 1
 "BBoxEng"
 ["ram784","BB_NO_MOD_DEF"]
+9 "ErrorAnalyzeBBox" 1
+"BBoxEng"
+["wl_afifo_100_8_2","BB_NO_MOD_DEF"]
 10 "ErrorAnalyzeBBox" 1
 "BBoxEng"
-["wl_sdpram","BB_NO_MOD_DEF"]
+["wl_afifo_784_8_2","BB_NO_MOD_DEF"]
 -1 "DetectTopDesignUnits" 2
 "RULEGROUP"
 ["Design Read"]

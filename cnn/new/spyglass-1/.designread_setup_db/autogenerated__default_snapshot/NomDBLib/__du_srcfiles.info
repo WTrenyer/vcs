@@ -1,4 +1,4 @@
-23
+14
 41 /home/ICer/vcs_class/cnn/new/computeAdd.v 1 990e12fd5822c24a84a1e784abdfe5d0
 42 /home/ICer/vcs_class/cnn/new/computeMult.v 1 95b709a32b14317494e54efce7e3340b
 42 /home/ICer/vcs_class/cnn/new/computeUnit.v 1 8007ff954fbc27d731f8b75ab80f775b
@@ -13,12 +13,3 @@
 39 /home/ICer/vcs_class/cnn/new/quantify.v 1 ddebb9fe4108eb219650ffd421e1646c
 40 /home/ICer/vcs_class/cnn/new/ramResult.v 1 4508b7f1dadb784146fefaeb1f062534
 39 /home/ICer/vcs_class/cnn/new/ramWrite.v 1 ecefdd54915927cd2c3873486f6f46c2
-44 /home/ICer/vcs_class/cnn/new/fifo/wl_afifo.v 1 a9fe8404f4ccef604b71e5914f74fea1
-52 /home/ICer/vcs_class/cnn/new/fifo/wl_afifo_arempty.v 1 e169b87276b733fa3785e95341f27c84
-51 /home/ICer/vcs_class/cnn/new/fifo/wl_afifo_awfull.v 1 152390339d3d5db2420687148ca0d28b
-48 /home/ICer/vcs_class/cnn/new/fifo/wl_afifo_ram.v 1 f7fc209fb956108b539d4412f70ca3ae
-51 /home/ICer/vcs_class/cnn/new/fifo/wl_afifo_rempty.v 1 cbf591bfdf4184d2823f4f7e6c6b35f2
-51 /home/ICer/vcs_class/cnn/new/fifo/wl_afifo_synr2w.v 1 a4cbb3bec84844ccd347a50fb32c0baf
-51 /home/ICer/vcs_class/cnn/new/fifo/wl_afifo_synw2r.v 1 6bff482a792df95fddd8855f50e32572
-50 /home/ICer/vcs_class/cnn/new/fifo/wl_afifo_wfull.v 1 7bd2aa3e9cf96a965b9d8c655527d0a9
-52 /home/ICer/vcs_class/cnn/new/fifo/wl_afifo_wrapper.v 1 5a1de17a7990203d870d49c439429fcd

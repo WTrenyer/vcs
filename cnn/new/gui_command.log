@@ -7,10 +7,3 @@ current_goal Design_Read -alltop
 
 link_design -force
 
-read_file -type verilog {fifo/wl_afifo.v fifo/wl_afifo_arempty.v fifo/wl_afifo_awfull.v fifo/wl_afifo_ram.v fifo/wl_afifo_rempty.v fifo/wl_afifo_synr2w.v fifo/wl_afifo_synw2r.v fifo/wl_afifo_wfull.v fifo/wl_afifo_wrapper.v}
-
-
-link_design -force
-
-gui_exit
-gui_exit

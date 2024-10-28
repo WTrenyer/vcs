@@ -28,15 +28,6 @@ Option          Value             Origin  File                           LineNo
                 convUnit.v        APICall -                              -
                 dataReuse.v       APICall -                              -
                 dataReuse_test.v  APICall -                              -
-                fifo/wl_afifo.v   APICall -                              -
-                fifo/wl_afifo_arempty.v APICall -                              -
-                fifo/wl_afifo_awfull.v APICall -                              -
-                fifo/wl_afifo_ram.v APICall -                              -
-                fifo/wl_afifo_rempty.v APICall -                              -
-                fifo/wl_afifo_synr2w.v APICall -                              -
-                fifo/wl_afifo_synw2r.v APICall -                              -
-                fifo/wl_afifo_wfull.v APICall -                              -
-                fifo/wl_afifo_wrapper.v APICall -                              -
                 fifo100.v         APICall -                              -
                 fifo784.v         APICall -                              -
                 maxValue.v        APICall -                              -

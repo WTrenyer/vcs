@@ -891,5 +891,10 @@ report_timing -max $TIMING_RPT_NUM > $TIMING_RPT
 report_timing -delay min -max_paths $TIMING_RPT_NUM -nets -tran -nosplit -input_pins > $TIMING_RPT_MIN
 report_area -hierarchy > $AREA_RPT
 report_power -hierarchy > $POWER_RPT
-dc_shell> cd
-dc_shell> 
+dc_shell> exit
+
+Memory usage for main task 91 Mbytes.
+Memory usage for this session 91 Mbytes.
+CPU usage for this session 2 seconds ( 0.00 hours ).
+
+Thank you...
